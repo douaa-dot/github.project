@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>TP FORM</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    background-color:pink;
+}
+h2{
+    color: #650954;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.form-container{
+    background-color: white;
+    padding:2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgb(0,0,0,0.1 );
+    
+}
+.form-groupe{
+    margin-bottom: 1.5rem;
+}
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    color:  #650954;
+    
+}
+input,textarea{
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid#ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    border-color:  #650954 ;
+}
+input:focus, textarea:focus{
+border-color: #3498db;
+outline: none;
+box-shadow: 0 0 5px rgb( 52,152,219,0.5);
+}
+#bouton{
+    text-align: center;
+    border: none;
+    background-color: rgb(122, 5, 77);
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    font-size: large;
+    height:40px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+#bouton:hover{
+    background-color: #4122f0;
+}
+    </style>
+    </head>
+            <body>
+        <div class="form-container">
+             <h2>Contactez-Nous</h2>
+            <form action="#">
+          <div class="form-groupe">
+             <label for="nom">Nom et Prenom :</label>
+             <input type="text" name="nom" id="nom" required>
+            </div>
+            <div class="form-groupe">
+                <label for="email">Numero :</label>
+                <input type="numero" name="email" id="numero"  required>
+            </div>
+            <div class="form-groupe">
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email"  required>
+            </div>
+           <div class="form-groupe">
+                <label for="message"> Message :</label>
+                <textarea name="message" id="message" rows="4" required></textarea>
+      
+           </div>
+                  <button type="submit" id="bouton">Envoyer</button>
+             </form>
+          </div>
+         </body>
+        </html>
+  
